@@ -27,7 +27,7 @@ buttons.forEach(button => {
 
 function onButtonClick(button) {
 
-    if (button.id === "percentage-button") {
+    if ( button.id === "percentage-button") {
       alert("Percentage button clicked");
     } else if (button.id === "drain-button") {
       alert("Drain button clicked");
