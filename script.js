@@ -1,9 +1,4 @@
-
-// .querySelector() - it only acts on the first match
-// Select all the buttons
 const buttons = document.querySelectorAll(".button");
-
-// Loop through all the buttons and add an event listener to each of them
 buttons.forEach(button => {
   button.addEventListener("click", function() {
     button.classList.toggle('active');
@@ -12,34 +7,70 @@ buttons.forEach(button => {
 });
 
 
-// function buttonClick(event) {
-//     var button = event.target;
-//     var buttonText = button.textContent;
-  
-//     if (buttonText === "ON/OFF") 
-//     { alert("The ON/OFF button was clicked!");}
-//     else if (buttonText === "Percentage") {alert("The Percentage button was clicked!");} 
-//     else if (buttonText === "Drain") {alert("The Drain button was clicked!");} 
-//     else if (buttonText === "Quality") {alert("The Quality button was clicked!");} 
-//     else if (buttonText === "Filter check") {alert("The Filter check button was clicked!");}
-// }
 
+var isPer = false;
+var isDrain = false;
+var isTur = false;
+var isTds = false;
+var isPh = false;
+var isFil = false;
 
-function onButtonClick(button) {
-
-    if ( button.id === "percentage-button") {
-      alert("Percentage button clicked");
-    } else if (button.id === "drain-button") {
-      alert("Drain button clicked");
-    } else if (button.id === "filter-check-button") {
-      alert("Filter Check button clicked");
-    } else if(button.id == "ph-sensor"){
-      alert("Ph sensor has been turned on")  
-    } else if(button.id == "turbidity-sensor"){
-        alert("Turbidity sensor has been turned on")  
-    } else if(button.id == "tds-sensor"){
-        alert("TDS sensor has been turned on")  
+function onButtonClickPer(button) {
+    isPer = !isPer;
+    if ( button.id === "percentage-button" ){ 
+          if(isPer){{alert("Percentage button clicked");}}
+          else{alert("Do you want to turn off the button");} 
     }
+}
+
+function onButtonClickDrain(button){
+
+    isDrain = !isDrain;
+    if (button.id === "drain-button" ){
+          if(isDrain){{alert("Drain button clicked");}}
+          else{alert("Do you want to turn off the button");}
+    }
+
+}
+
+function onButtonClickFilter(button){
+
+    isFil = !isFil
+    if (button.id === "filter-check-button"){
+          if(isFil){{alert("Filter Check button clicked");}}
+          else{alert("Do you want to turn off the button");}
+    }
+
+}
+
+function onButtonClickPh(button){
+
+    isPh = !isPh;
+    if(button.id == "ph-sensor" ){
+          if(isPh){{alert("Ph sensor has been turned on");}}
+          else{alert("Do you want to turn off the button");}
+    }
+
+}
+
+function onButtonClickTurbidity(button){
+
+    isTur = !isTur
+    if(button.id == "turbidity-sensor" ){
+          if(isTur){{alert("Turbidity sensor has been turned on");}}
+          else{alert("Do you want to turn off the button");}
+    }
+
+}
+
+function onButtonClickTds(button){
+
+    isTds = !isTds;
+    if(button.id == "tds-sensor" ){
+          if(isTds){{alert("TDS sensor has been turned on");}}
+          else{alert("Do you want to turn off the button");}
+    }
+     
 }
 
 
