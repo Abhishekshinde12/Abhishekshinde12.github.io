@@ -14,8 +14,8 @@ div .header{
     border: 2px solid black;
     margin: 30px;
     text-align: center;
-    height: 200px;
-    width: 200px; /*233*/
+    height: 300px;
+    width: 233px; /*233*/
 
 }
 
@@ -27,8 +27,14 @@ div .header{
 }
 
 .button{
-    margin-top: 70px;
+    margin-top: 80px;
 }
+
+.button.active{
+    background-color: green;
+}
+
+
 
 .footer{
     border: 2px solid black;
