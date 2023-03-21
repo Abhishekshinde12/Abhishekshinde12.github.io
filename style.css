@@ -2,6 +2,7 @@ div .header{
     background-color: black;
     height: 100px;
     font-weight: 30px;
+    font-size: 30px;
     color: white;
     text-align: center;
     vertical-align: middle;
@@ -15,7 +16,7 @@ div .header{
     margin: 30px;
     text-align: center;
     height: 300px;
-    width: 233px; /*233*/
+    width: 300px; /*233*/
 
 }
 
@@ -23,11 +24,15 @@ div .header{
     align-items: center;
     display: grid;
     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    margin-left: 38px;
 
 }
 
 .button{
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .button.active{

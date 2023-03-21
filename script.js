@@ -38,8 +38,12 @@ function onButtonClick(button) {
       alert("Filter Check button clicked");
     } else if(button.id == "ph-sensor"){
       alert("Ph sensor has been turned on")  
+    } else if(button.id == "turbidity-sensor"){
+        alert("Turbidity sensor has been turned on")  
+    } else if(button.id == "tds-sensor"){
+        alert("TDS sensor has been turned on")  
     }
-  }
+}
 
 
 
