@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     background-image: url("back.jpg");
     background-size: cover;
     /* opacity: 0.5; */
@@ -13,7 +14,7 @@ body{
     font-size: 30px;
     color: white;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     padding-top: 50px;
     margin: 0px 0px;
 
@@ -43,30 +44,20 @@ body{
     color: black;
 }
 
-
-
-
-
 .button{
-    /* margin-top: 140px; */
     position: absolute;
     bottom: 10px;
     left: 100px;
     right: 100px;
     border-radius: 20px;
-
-}
-
-.button:hover{
     border: 2px solid black;
 }
+
 
 
 .button.active{
     background-color: green;
 }
-
-
 
 .footer{
     border: 2px solid black;
@@ -74,6 +65,8 @@ body{
     font-size: 30px;
     background-color: black;
     color: white;
+    height: 50px;
+    width: 100%;
 
 }
 
