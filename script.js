@@ -26,14 +26,11 @@ buttons.forEach(button => {
 
 
 function onButtonClick(button) {
-    if (button.id === "on-off-button") {
-      alert("ON/OFF button clicked");
-    } else if (button.id === "percentage-button") {
+
+    if (button.id === "percentage-button") {
       alert("Percentage button clicked");
     } else if (button.id === "drain-button") {
       alert("Drain button clicked");
-    } else if (button.id === "quality-button") {
-      alert("Quality button clicked");
     } else if (button.id === "filter-check-button") {
       alert("Filter Check button clicked");
     } else if(button.id == "ph-sensor"){
